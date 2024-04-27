@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+    --color-primary:#80CBC4;
+    --color-secondary:#64B5F6;
+    --color-tertiary:#FFAB91;
+    --color-accent:#90A4AE;
+    --color-light:#DCE775;
+}
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+h1,h2,h3 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+h1 {
+    font-size: 3.25rem;
+}
+h2 {
+    font-size: 1.75rem;
+}
+h3 {
+    font-size: 1.25rem;
+    text-align: center;
+    color:#64B5F6;
+    text-decoration:none;
+}
+header{
+    background-color:#80CBC4;
+    color:brown;
+    text-align: center;
+    padding:0.5rem 0 0 0;
+}
+header nav {
+    display:flex;
+    justify-content: space-evenly;
+    background-color: rgb(198, 222, 142);
+    padding:0.5rem 0;
+}
+header nav a {
+    color:black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+header nav a:hover{
+    color:coral;
+}
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    display:grid;
+    grid-template: 1fr 1fr / 1fr auto;
+    gap:1rem;
+}
+.card {
+    border-radius: 0.5rem;
+    border:#90A4AE solid 1px;
+    margin: 1rem 0 ;
+    padding: 0;
+    grid-row: span 2;
+    position:relative;
+}
+.card h2 {
+    background-color: #80CBC4;
+    margin: 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    color: darkgreen;
+}
+.flex-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+.card-content {
+    padding: 1rem;
+    grid-row: span 2;
+}
+.left {
+    grid-column: 1/2;
+}
+.right {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+}
+.medium-img {
+    width: 200px;
+    height:auto;  
+}
+.float-right{
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+.float-left{
+    float: left;
+}
+footer {
+    background-color: #DCE775;
+    color:black;
+    text-align: center;
+    padding: 1rem 0;
+}
