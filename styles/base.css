@@ -25,28 +25,28 @@ h2 {
 h3 {
     font-size: 1.25rem;
     text-align: center;
-    color:#64B5F6;
+    color:#1F0A00;
     text-decoration:none;
 }
 header{
-    background-color:#80CBC4;
-    color:brown;
+    background-color:#0B3954;
+    color:#FFF;
     text-align: center;
     padding:0.5rem 0 0 0;
 }
 header nav {
     display:flex;
     justify-content: space-evenly;
-    background-color: rgb(198, 222, 142);
+    background-color: #087A87;
     padding:0.5rem 0;
 }
 header nav a {
-    color:black;
+    color:#FFF;
     text-decoration: none;
     font-size: 2rem;
 }
 header nav a:hover{
-    color:coral;
+    color:#BFD7EA;
 }
 main {
     max-width: 960px;
@@ -64,11 +64,11 @@ main {
     position:relative;
 }
 .card h2 {
-    background-color: #80CBC4;
+    background-color: #087A87;
     margin: 0;
     padding: 0.5rem;
     border-radius: 0.5rem 0.5rem 0 0;
-    color: darkgreen;
+    color: #FFF;
 }
 .flex-container {
     flex: 1;
@@ -101,8 +101,8 @@ main {
     float: left;
 }
 footer {
-    background-color: #DCE775;
-    color:black;
+    background-color: #087A87;
+    color: #fff;
     text-align: center;
     padding: 1rem 0;
 }
