@@ -40,9 +40,10 @@ figure img{
     max-width: 100%;
     height:auto;
 }
-/* figcaption{
+/* .figcaption{
     font-size:smaller;
     padding:0.75rem;
+    word-wrap: break-word;
 } */
 footer{
     background-color: #087A87;
