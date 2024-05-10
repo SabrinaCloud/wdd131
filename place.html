@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - | Sabrina Chang | Taipei</title>
+    <meta name="description" content="My hometown, Taipei">
+    <meta name="author" content="Sabrina Chang">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+       <h1>Taipei</h1> 
+    </header>
+    <main>
+       <div class="hero">
+        <picture>
+            <source srcset="images/taipei1-large.webp" media="(min-width:1090px)">
+            <!-- <source srcset="images/taipei-medium.webp" media="(min-width:724px)"> -->
+            <img src="images/taiwanmountain.webp" alt="Taipei landmark" width="500" height="250">
+        </picture>
+        <section id="data-section">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <th>Area:</th>
+                    <td>13,976 sq mi</td>
+                </tr>
+                <tr>
+                    <th>Population:</th>
+                    <td>23,894,394</td>
+                </tr>
+                <tr>
+                    <th>Capitol of:</th>
+                    <td>Taipei</td>
+                </tr>
+                <tr>
+                    <th>Language:</th>
+                    <td>Traditional Chinese</td>
+                </tr>
+                <tr>
+                    <th>Currency:</th>
+                    <td>Taiwan Dollar</td>
+                </tr>
+                <tr>
+                    <th>Time Zone:</th>
+                    <td>UTC+8</td>
+                </tr>
+                <tr>
+                    <th>Calling Code:</th>
+                    <td>+886</td>
+                </tr>
+                <tr>
+                    <th>Internet TLD:</th>
+                    <td>.tw</td>
+                </tr>
+            </table>
+        </section>
+        <section id="weather-section">
+            <h2 id="weather-title">Weather</h2>
+            <img id="weather-icon" src="images/weather.svg" alt="Weather Icon">
+            <table>
+                <tr>
+                    <th>Temperature:</th>
+                    <td><span id="temperature">22</span> <span id="temp-unit">℃</span></td>
+                </tr>
+                <tr>
+                    <th>Condition:</th>
+                    <td>Partly Cloudy</td>
+                </tr>
+                <tr>
+                    <th>Wind:</th>
+                    <td><span id="wind">20</span> <span id="wind-unit">km/h</span></td>
+                </tr>
+                <tr>
+                    <th>Wind Chill:</th>
+                    <td id="wind-chill"></td>
+                </tr>
+            </table>
+        </section>
+       </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🇹🇼 Sabrina Chang | Taipei 🇹🇼</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>    
+</body>
+
+</html>
