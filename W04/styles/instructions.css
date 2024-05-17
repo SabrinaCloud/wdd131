@@ -1,0 +1,66 @@
+:root{
+    --back: hsla(341, 100%, 85%, 1);
+    --back2: hsla(341, 100%, 85%, .5);
+    --foredark: hsla(0,0%,0%,1);
+    --forelight: hsla(0,0%,100%,1);
+    --border: hsla(0,0%,20%,.8);
+    --borderlight: hsla(0,0%,33%,.3);
+    --shadow: hsla(0,0%,50%,1);
+    --zebra: hsla(0,0%,93%,1);
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+table{
+    margin:10px auto;
+    border: thin solid var(--border);
+    box-shadow: 0 0 10px var(--shadow);
+    border-collapse: collapse;
+}
+caption{
+    padding: 10px;
+    caption-side: bottom;
+    font-size: .85rem;
+}
+/* tr:first-child th{
+    background-color: var(--back);
+    color: var(--forelight);
+} */
+th,td{
+    padding: 7px 15px;
+    border: 1px solid var(--borderlight);
+}
+thead th,tbody td{
+    text-align: center;
+}
+
+thead{
+    color: #FFFF;
+    background-color: var(--back);
+    th{
+    padding:1rem;
+    font-size: larger;
+    }
+    tr:nth-last-child(1){
+    background-color: #CFC7D2;
+    } 
+}
+
+tbody tr:nth-child(even){
+    background-color: var(--back2);
+}
+.blank{
+    background-color: var(--back);
+}
+
+/* th{
+    background-color: var(--back2);
+    font-size: larger;
+}
+td{
+    text-align: center;
+}
+tbody tr:nth-child(odd){
+    background-color: var(--zebra);
+} */
