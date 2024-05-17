@@ -104,6 +104,53 @@ const temples = [
       imageUrl:
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
+    {templeName: "Bountiful Utah",
+		location: "Bountiful, Utah, United States",
+		dedicated: "1995, January, 8",
+		area: 104000,
+		imageUrl: 
+		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bountiful-utah/400x250/bountiful-temple-766347-wallpaper.jpg"
+	},
+	{
+		templeName: "Palmyra New York",
+		location: "Palmyra, New York, United States",
+		dedicated: "2000, April, 6",
+		area: 10900,
+		imageUrl: 
+		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/palmyra-new-york/400x250/palmyra-new-york-mormon-temple-882900-high-res-print.jpg"
+	},
+	{
+		templeName: "Seoul Korea",
+		location: "Seoul, South Korea",
+		dedicated: "1985, December, 14",
+		area: 28057,
+		imageUrl:
+		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/seoul-korea/400x250/seoul-korea-temple-lds-424784-wallpaper.jpg"		
+	},
+    {templeName: "Bountiful Utah",
+		location: "Bountiful, Utah, United States",
+		dedicated: "1995, January, 8",
+		area: 104000,
+		imageUrl: 
+		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bountiful-utah/400x250/bountiful-temple-766347-wallpaper.jpg"
+	},
+	{
+		templeName: "Palmyra New York",
+		location: "Palmyra, New York, United States",
+		dedicated: "2000, April, 6",
+		area: 10900,
+		imageUrl: 
+		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/palmyra-new-york/400x250/palmyra-new-york-mormon-temple-882900-high-res-print.jpg"
+	},
+	{
+		templeName: "Seoul Korea",
+		location: "Seoul, South Korea",
+		dedicated: "1985, December, 14",
+		area: 28057,
+		imageUrl:
+		"https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/seoul-korea/400x250/seoul-korea-temple-lds-424784-wallpaper.jpg"		
+	},
+    
     // Add more temple objects here...
   ];
 
