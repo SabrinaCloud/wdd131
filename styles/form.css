@@ -96,3 +96,8 @@ button[type="submit"]{
 main p{
     margin-bottom: 1rem;
 }
+footer{
+    background-color: #c01b1b;
+    color:#FFFFFF;
+    padding: 1rem 0;
+}
