@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Website Project</title>
+    <meta name="description" content="Mattress Ladies">
+    <meta name="author" content="Sabrina Chang">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header id="top-header">
+        <span class="logo">
+            <a href="/project"><img src="images/mattressladieslogo.jpg" alt="Mattress Ladies"></a>
+        </span>    
+        <nav>
+            <ul class="navigation wrap">
+                <li><a href="/project" title="Home page" class="active">Home</a></li>
+                <li><a href="/project/about.html">About Us</a></li>
+                <li><a href="/project/helpcenter.html">Help Center</a></li>
+                <li><a href="/project/weeklyads.html">Weekly Ads</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="hero">
+            <picture class="hero-background">
+                <!-- <source srcset="images/place/washingtondc-hero-lg.webp" media="(min-width: 1090px)"> -->
+                <source srcset="images/coverphoto.jpg" media="(min-width: 724px)">
+                <img src="images/coverphoto.jpg" alt="Coverphoto" width="1200" height="500">
+            </picture>
+            <div class="hero-content">
+                <h1><span>Mattress Ladies</span><span>Sleep Better Ever</span></h1>
+                <a class="action-btn" href="/project/helpcenter.html">Send Me A Message</a>
+            </div>
+        </div>
+        <h2>Memeory Ladies!</h2>
+        <div class="picture-grid">
+            <div class="picture-grid-item">
+                <figure class="figure-pic">
+                    <img src="images/memoryfoammattress.jpg" alt="Mattress Ladies" loading="lazy">
+                    <figcaption><h3>About me</h3></figcaption>
+                </figure>
+                <p>Discover Comfort and Elegance with Mattress Ladies</p>
+                <a href="/project/about.html" class="action-btn">More About Me</a>
+            </div>
+            <div class="picture-grid-item">
+                <figure class="figure-pic">
+                    <img src="images/viewourad.jpg" alt="View our Ads" loading="lazy">
+                    <figcaption><h3>View our Ads</h3></figcaption>
+                </figure>
+                <p>Discover the Ultimate Comfort with Our Memory Foam Mattress!</p>
+                <a href="/project/weeklyads.html" class="action-btn">View our Ads</a>
+            </div>
+            <div class="picture-grid-item">
+                <figure class="figure-pic">
+                    <img src="images/helpcenter.jpg" alt="Help Center" loading="lazy">
+                    <figcaption><h3>Help Center</h3></figcaption>
+                </figure>
+                <p>Experience Exceptional Service with Mattress Ladies</p>
+                <a href="/project/helpcenter.html" class="action-btn">Send Me A Message</a>
+            </div>
+        </div>
+        <hr>
+        <form id="frm-contact" action="/project/contactSent.html" method="get">
+            <h2>Send Me a Message</h2>
+            <p>Usually respond within 24 hours.</p>
+
+            <label for="user-name" class="required">Name</label>
+            <input type="text" id="user-name" name="user-name" placeholder="Your name" required>
+
+            <label for="user-email" class="required">Email</label>
+            <input type="text" id="user-email" name="user-email" placeholder="Your email address" required>
+
+            <fieldset class="purpose-section">
+                <legend>Purpose of Contact</legend>
+                <div class="radio-item">
+                    <input type="radio" id="general" name="purpose" value="general" checked>
+                    <label for="general">General Inquiry</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="mattress-question" name="purpose" value="mattress">
+                    <label for="mattress-question">Mattress Question</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="service-requirement" name="purpose" value="service">
+                    <label for="website-suggestion">Service Requirement</label>
+                </div>
+            </fieldset>
+
+            <label for="contact-message" class="required">Message</label>
+            <textarea id="contact-message" name="contact-message" rows="5" required></textarea>
+
+            <div class="checkbox-item">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthy newsletter</label>
+            </div>
+
+            <button type="submit" class="action-btn">Send Message</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🇹🇼 Sabrina Chang | Taipei 🇹🇼</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

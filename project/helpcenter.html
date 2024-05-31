@@ -1,0 +1,74 @@
+<!DOCTYPE html>↩
+<html lang="en">↩
+<head>↩
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Website Project</title>
+    <meta name="description" content="Mattress Ladies">
+    <meta name="author" content="Sabrina Chang">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/index.js" defer></script>
+</head>↩
+<body>↩
+    <header id="top-header">
+        <span class="logo">
+            <a href="/project"><img src="images/mattressladieslogo.jpg" alt="Mattress Ladies"></a>
+        </span>
+        <nav>
+            <ul class="navigation wrap">
+                <li><a href="/project" title="Home page" class="active">Home</a></li>
+                <li><a href="/project/about.html">About Us</a></li>
+                <li><a href="/project/helpcenter.html">Help Center</a></li>
+                <li><a href="/project/weeklyads.html">Weekly Ads</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="frm-contact" action="/project/contactSent.html" method="get">
+            <h2>Send Me a Message</h2>
+            <p>Usually respond within 24 hours.</p>
+
+            <label for="user-name" class="required">Name</label>
+            <input type="text" id="user-name" name="user-name" placeholder="Your name" required>
+
+            <label for="user-email" class="required">Email</label>
+            <input type="text" id="user-email" name="user-email" placeholder="Your email address" required>
+
+            <fieldset class="purpose-section">
+                <legend>Purpose of Contact</legend>
+                <div class="radio-item">
+                    <input type="radio" id="general" name="purpose" value="general" checked>
+                    <label for="general">General Inquiry</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="mattress-question" name="purpose" value="mattress">
+                    <label for="mattress-question">Mattress Question</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="service-requirement" name="purpose" value="service">
+                    <label for="website-suggestion">Service Requirement</label>
+                </div>
+            </fieldset>
+
+            <label for="contact-message" class="required">Message</label>
+            <textarea id="contact-message" name="contact-message" rows="5" required></textarea>
+
+            <div class="checkbox-item">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthy newsletter</label>
+            </div>
+
+            <button type="submit" class="action-btn">Send Message</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🇹🇼 Sabrina Chang | Taipei 🇹🇼</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>↩
+</html>

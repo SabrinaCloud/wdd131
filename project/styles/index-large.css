@@ -1,0 +1,82 @@
+
+    @media (min-width: 37.5rem) {
+        .hero-content h1 {
+        font-size : 3rem;
+        }
+        .action-btn {
+        padding : 1rem 2rem;
+        }
+        .picture-grid {
+        display : grid;
+        grid-template-columns : repeat(3,1fr);
+        margin-bottom : 2rem;
+        gap : 1rem;
+        text-align : center;
+        }
+        .figure-pic img {
+        width : 100%;
+        height : auto;
+        max-height : 100px;
+        object-fit : contain;
+        }
+        .about-section {
+        flex-direction : row;
+        align-items : flex-start;
+        }
+        .about-pics {
+        width : 150px;
+        margin-right : 20px;
+        margin-bottom : 0;
+        flex-shrink : 0;
+        }
+        .about-pics img {
+        position : absolute;
+        }
+        #young-pic {
+        z-index : 1;
+        top : 0;
+        left : 0;
+        }
+        #now-pic {
+        z-index : 2;
+        top : 50px;
+        left : 75px;
+        }
+        .about-section p {
+        margin : 0;
+        padding : 1rem;
+        align-self : center;
+        min-height : 150px;
+        flex : 1;
+        }
+        }
+        #frm-contact {
+        display : grid;
+        max-width : 400px;
+        background-color : #4D878F20;
+        border-radius : 6px;
+        padding : 1rem;
+        margin : 1rem auto;
+        }
+        #frm-contact label {
+        width : 100%;
+        text-align : left;
+        font-size : 1.2rem;
+        }
+        #frm-contact label.required::after {
+        content : "*";
+        }
+        input[type="text"], .purpose-section, textarea {
+        width : 100%;
+        padding : 0.8rem 0.6rem;
+        margin : 0 0 1rem 0;
+        border-radius : 5px;
+        font-size : 1.2rem;
+        }
+        input[type="text"]:valid, textarea:valid {
+        background-color : #FFFFFF;
+        }
+        input[type="text"]:invalid, textarea:invalid {
+        background-color : #4D878F20;
+        color : var(--dark-color);
+        }
